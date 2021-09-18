@@ -33,6 +33,7 @@
           <body>Hello World!</body>
           </html>
         dest: "/var/www/html/index.html"
+        mode: '0644'
       notify: restart apache
 
     - name: Ensure Apache is running and starts at boot.
